@@ -1,0 +1,91 @@
+/* Tambahkan ini ke dalam styles.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tambahkan class animasi ke elemen-elemen yang ingin dianimasikan */
+.animate__animated {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeIn {
+    animation-name: fadeIn;
+}
+
+.animate__zoomIn {
+    animation-name: zoomIn;
+}
+
+.animate__fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animate__fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.5rem;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.form-control {
+    height: 50px;
+}
+
+.form-control:focus + .input-label,
+.form-control:valid + .input-label {
+    top: 0;
+    transform: translateY(0);
+    font-size: 1rem;
+}
+
+

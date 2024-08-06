@@ -1,0 +1,77 @@
+/* Tambahkan animasi ini ke style.css */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cv-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+
+.cv-popup.show {
+    display: flex;
+    animation: fadeIn 1s ease; /* Pastikan ini ada */
+    opacity: 1;
+}
+
+.cv-popup .cv-image .cv-image-content {
+    max-width: 80%;
+    max-height: auto;
+}
+
+.close-button-popup {
+    position: absolute;
+    top: 30px;
+    right: 400px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease, color 0.3s ease, background 0.3s ease;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.close-button-popup {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cv-popup.show .close-button-popup {
+    opacity: 1;
+    animation: fadeOut 0.3s ease;
+}
+
+
+#cvImage {
+    display: none;
+}
+
+

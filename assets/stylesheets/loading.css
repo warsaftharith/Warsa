@@ -1,0 +1,76 @@
+/* Style for the loading screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-text {
+    color: #ffffff; /* Warna teks */
+    font-size: 18px; /* Ukuran teks */
+    font-family: Arial, sans-serif; /* Font teks */
+    margin-top: 10px; /* Jarak atas teks dari spinner */
+}
+
+@media (max-width: 768px) {
+    .loading-text {
+        font-size: 16px; /* Ukuran teks untuk ponsel */
+        margin-top: 5px; /* Jarak atas teks dari spinner untuk ponsel */
+    }
+}
+
+
+/* Style for the spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spinner-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+  
+/* typing */
+/* Animasi keyframes untuk teks yang diketik */
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Gaya untuk kelas judul */
+  .judul {
+    overflow: hidden; /* Menghindari teks melampaui kotaknya */
+    white-space: nowrap; /* Mencegah teks melipat */
+    margin: 0 auto; /* Memposisikan teks di tengah-tengah */
+    letter-spacing: .15em; /* Menambahkan jarak antar huruf */
+    border-right: .15em solid transparent; /* Border yang akan menjadi placeholder untuk kursor */
+    animation: typing 3s steps(50, end); /* Menggunakan animasi untuk mengetik */
+  }
+  
