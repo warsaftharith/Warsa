@@ -1,0 +1,432 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Warsa">
+    <meta name="description" content="Hai, nama saya Warsa. Saya berasal dari Lombok dan saya seorang Frontend Developer. Selamat datang di halaman web saya!">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/sal.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/tombol.css" />
+    <link rel="stylesheet" href="/assets/stylesheets/loading.css">
+    <!-- animation img -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title id="browserTitle">Warsa</title>
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="loading-screen">
+        <!-- Spinner animasi bounce -->
+        <div class="spinner">
+            <div class="spinner-circle"></div>
+            <div class="spinner-circle" style="animation-delay: 0.1s;"></div>
+            <div class="spinner-circle" style="animation-delay: 0.2s;"></div>
+        </div>
+        <br>
+        <p class="loading-text">Sabar bro, internet lo lelet😂🖕🏻...</p>
+    </div>
+    <!-- my content -->
+    <div class="more-information">
+        <div class="container" style="z-index: 250;">
+            <div class="heading-div more-info-dis" style="width: 100%; text-align: center; margin-bottom: 90px;">
+                <span style="font-size: 1.2rem;">Quick content</span>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-col">
+                        <div class="col-title text-center">
+                            <a href="#about" class="info-button">TENTANG SAYA</a>
+                        </div>
+                        <div class="col-content text-left">
+                            <span>Saya<strong> warsa</strong>, saya seorang calon devoloper dari lombok, Indonesia.</span>
+                            <span>saat ini saya sedang mengambil mengambil gelar S1 di STIT PALAPA. </span>
+                            <span class="more-info-dis">selain coding, saya juga penggemar desain, bermain game, bermain raket. Jadi saya menyukai hal baru yang belum saya pelajari...</span>
+                            <span class="more-info-dis">Jadi itu lah saya...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                   <div class="info-col">
+                       <div class="col-title text-center">
+                            <a href="#project" class="info-button">GALERY SAYA</a>
+                       </div>
+                        <div class="col-content text-left">
+                            <span>lihat lah galery saya, banyak perjalanan yang saya  sudah lewati...</span>
+                            <span class="more-info-dis">atau klik galery  saya di <a href="#MY GALERY">DISINI</a></span>
+                        </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="info-col">
+                        <div class="col-title text-center">
+                            <a href="#continue-contact" class="info-button">FOLLOW" LAH WE</a>
+                        </div>
+                        <div class="col-content text-left">
+                            <span>jika kamu suka apa yang sudah saya buat jangan lupa ikuti sosial media saya ya...</span>
+                        </div>    
+                    </div>     
+                </div>
+            </div>
+            <div class="media-icons text-center">
+                <a href="https://www.instagram.com/warsaftharith" target="_blank">
+                    <i class="fab fa-instagram" style="color: red;"></i>
+                </a>
+            
+                <a href="https://github.com/warsaftharith" target="_blank">
+                    <i class="fab fa-github" style="color: #333;"></i>
+                </a>
+            
+                <a href="https://web.facebook.com/WarsaftHarith" target="_blank">
+                    <i class="fab fa-facebook-square" style="color: blue;"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- the navbar at the top of the screen -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="navbar-brand more-info-dis" id="logo-container">
+            <img
+                src="./assets/images/logo2.jpg"
+                alt="Logo WARSA"
+                class="navbar-logo"
+                data-sal-duration="2000"
+                data-sal="slide-left"
+                data-sal-delay="1000"
+                data-sal-easing="ease-out-bounce"
+            >
+            <span
+            id="brand"
+            class="brand-text light-blue"
+            data-sal-duration="2000"
+            data-sal="slide-right"
+            data-sal-delay="1000"
+            data-sal-easing="ease-out-bounce"
+        >WARSA</span>
+        </div>
+
+        <!-- the options from the navbar -->
+        <div class="logo-section ml-auto">
+            <div class="animate-me my-div-animate">
+                <div class="first-line">
+                </div>
+                <div class="second-line">
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Top section of the page -->
+    <div class="my-container full-size" style="background-image: url('/assets/images/headerr.png'); background-size: cover;">
+        <div class="container header-container">
+            <div class="cloud cloud-right"></div>
+            <div class="cloud cloud-left"></div>
+            <svg class="snowflake" width="10" height="10" viewBox="0 0 10 10">
+                <circle cx="5" cy="5" r="2" fill="#fff" /> <!-- Menyesuaikan radius sesuai keinginan -->
+            </svg>
+            <div class="center-container">
+                <p id="heading">Hi, I'm</p>
+                <h1>WARSA</h1>
+                <p id="sub-heading">Hanya ber cita cita jadi <span class="light-pink">Full stack</span> Web developer <span id="location" style="color: red; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">INDONESIA</span>
+                </p>
+                <button type="button" class="btn btn-lg header-button" style="color: black;"> Gallery </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About me section right here -->
+    <div class="full-size my-container gradient-background" id="about">
+        <div class="whole-container">
+            <div class="about-container text-center" >
+                <h2 style="font-weight: bold; font-family: 'Poppins', sans-serif; font-size: 2.5rem; color: white;"
+                    data-sal-duration="2000"
+                    data-sal="zoom-in"
+                    data-sal-delay="200"
+                    data-sal-easing="ease-out-bounce"
+                    >Tentang saya</h2>
+                <img src="/assets/images/profile-pic.jpeg" alt="Profile pic" id="profile-pic" class="rounded-circle"
+                    data-sal-duration="1000"
+                    data-sal="zoom-in"
+                    data-sal-delay="400"
+                    data-sal-easing="ease-out-bounce">
+                <hr />
+                <div class="sub-image"
+                    data-sal-duration="1000"
+                    data-sal="slide-left"
+                    data-sal-delay="300"
+                    data-sal-easing="ease-out-bounce"
+                    >
+                    <p style="color: white;">Saya <strong>Warsa </strong>dan saat ini saya sedang <strong>belajar ilmu komputer</strong> dan saya berkuliah di STIT PALAPA, INDONESIA.</p>
+                    <p style="color: white;">Tahun ini saya mengembangkan minat yang besar terhadap web <strong>full-stack</strong> sehingga saya mulai belajar cara <strong>design</strong> and <strong>code</strong> web apps dengan <i>Angular</i> sebagai kerja favorite saya di
+                    <strong>front end</strong>, sambil menggunakan <i>Firebase</i>, <i>GCP</i>, Sebagai opsi tanpa server <strong>back end</strong>, atau menggunakan <i>Node</i>, <i>Express</i> dan <i>MongoDB/Redis</i> for <strong>full fledged</strong> untuk implementasikan server yang lengkap.</p>
+                </div>
+
+                <div class="cv-container">
+                    <div class="cv-button">
+                        <button type="button" class="btn btn-md" id="showCvButton">
+                            <i class="far fa-file-alt" style="margin-right: 5px;"></i>Check CV
+                        </button>
+                    </div>
+                
+                    <div class="cv-popup" id="cvPopup">
+                        <div class="cv-image">
+                            <button type="button" class="close-button close-button-popup" id="closeButton" onclick="closeCvPopup()">
+                                <!-- <i class="fas fa-times"></i> -->
+                            </button>
+                            <img src="/assets/images/cv-image.png" alt="CV Image" class="cv-image-content">
+                        </div>
+                    </div>
+                </div>             
+
+            </div>
+        </div>
+    </div>
+
+    <div class="cv-button"
+         data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom">
+         <button type="button" class="btn btn-md" id="showCvButton">
+            <i class="far fa-file-alt" style="margin-right: 5px;"></i>Check CV
+        </button>
+
+    </div>
+
+    <!-- The projects area -->
+    <main>
+        <ul class="slider">
+          <li
+            class="item"
+            style="
+              background-image: url('/assets/images/bacground.jpeg');
+            ">
+            <div class="content">
+              <h2 class="title">"STIT palapa campus"</h2>
+              <p class="description">
+                Finally, everyone will finish their studies at STIT Palapa Nusantara
+                and I really thank you very much
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="background-image: url('/assets/images/galery3.jpg')"
+          >
+            <div class="content">
+              <h2 class="title">"pink Beach"</h2>
+              <p class="description">
+                The original name is Tangsi Beach, 
+                but because the beach sand is pink, 
+                gradually this beach also became known as the pink beach.
+              </p>
+              <button class="read-more-last">Read More</button>
+                <div class="article-box" style="display: none;">
+          </li>
+          <li
+            class="item"
+            style="
+              background-image: url('/assets/images/galery.jpg');
+            "
+          >
+            <div class="content">
+              <h2 class="title">"mosquito net thread watter fall"</h2>
+              <p class="description">
+                Why is it called Mosquito Net Yarn?
+                It is called benang kelambu waterfall 
+                because the water flow looks like thin threads. 
+                This can happen because the water flow is covered by dense plants that grow around the cliffs. 
+                This means that the flow of water that comes out is not heavy and dangles like a thread, so it doesn't make a loud noise
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="
+              background-image: url('/assets/images/galery2.jpg');
+            "
+          >
+            <div class="content">
+              <h2 class="title">"Mount Rinjani"</h2>
+              <p class="description">
+                What is Mount Rinjani famous for?
+                It is not surprising that Mount Rinjani is included in the ranks of Indonesia's 
+                Seven Summits and is often visited by local and international climbers. 
+                Mount Rinjani is famous for its natural charm which has a peak called Puncak Dewi Anjani, 
+                and a crater lake called Segara Anak.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="
+              background-image: url('/assets/images/galery6.jpeg');
+            "
+          >
+            <div class="content">
+              <h2 class="title">"community service program"</h2>
+              <p class="description">
+                KKN is an abbreviation for Real Work Lectures. 
+                or what is called a "community service program". 
+                Broadly speaking, KKN is a student service activity for the community in accordance with the field of science they are studying. 
+                The aim of KKN is to provide an opportunity for students to apply their knowledge.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+          <li
+            class="item"
+            style="
+              background-image: url('/assets/images/galery4.jpeg');
+            "
+          >
+            <div class="content">
+              <h2 class="title">"semoyang village office"</h2>
+              <p class="description">
+                KKN at the Semoyang Village Office is not the end of a journey, 
+                but the beginning of a strong bond between students and the community. 
+                Here, they leave a mark that brings inspiration, hope and a spirit of goodness to the next generation.
+              </p>
+              <button>Read More</button>
+            </div>
+          </li>
+        </ul>
+        <nav class="nav nav-prev">
+            <div class="btn prev"></div>
+        </nav>
+        
+        <nav class="nav nav-next">
+            <div class="btn next"></div>
+        </nav>                            
+        
+    </main>
+
+    <!-- The contact me section right bellow -->
+    <div class="container-fluid" id="contact" style="padding: 0 !important; z-index: -15 !important;"
+            data-sal-duration="600"
+            data-sal="slide-up"
+            data-sal-easing="ease-out-bounce"
+            data-sal-delay="0">
+
+        <div style="margin-top: 250px; margin-bottom: 0; z-index: 50 !important; width: 60%; margin-left: 20%; margin-right: 20%; position: relative;" class="black-contact">
+            <div class="contact-me-section">
+                <div class="row" style="width: 90%;">
+                    <div class="col-lg-4 text-center" style="display: flex; justify-content: center; align-items: center;">
+                        <h2 style="font-weight: bold; font-size: 2.2rem;" id="start-project">Let's start!!!</h2>
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <p style="font-size: 110%;" id="under-start-project">kamu tertarik dan ingin bekerjasama dengan saya? kuy gas langsung kirim pesan kamu di bawah dan jika suka tentang desain seperti yang saya buat. saya juga bisa buatin untuk kamu, tinggal kirim pesan melalui email &#x1F604;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="continue-contact" style="z-index: -10 !important;">
+            <div style="width: 50%; margin-left: auto; margin-right: auto; padding: 3rem; padding-top: 150px;" class="last-section">
+                <div style="text-align: center; width: 100%; color: #fff; font-weight: bolder; margin-bottom: 50px; margin-top: -15px;" id="fill-info-div">
+                    Cukup isi kolom di bawah dan selesai.
+            </div>
+            <form id="contactForm" action="https://formspree.io/f/mvoezkgl" method="POST">
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">
+                        <i class="fas fa-envelope" style="color: #fff; margin-top: 15px; font-size: 1.5rem;"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <input type="email" id="emailInput" name="email" placeholder="Email" class="form-control form-control-lg" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required />
+                    </div>
+                </div>
+
+                <div class="mySlides">
+                    <div style="text-align:center; position: absolute; bottom: 5px; width: 100%;">
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 text-right">
+                        <i class="fas fa-sticky-note" style="color: #fff; margin-top: 15px; font-size: 1.5rem;"></i>
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                        <textarea id="messageInput" name="message" cols="20" rows="10" class="form-control form-control-lg" placeholder="Pesan" required></textarea>
+                    </div>
+                </div>
+            
+                <button type="submit" class="btn btn-lg contact-button" id="sendButton">
+                    <span id="sendIcon"><i class="fas fa-paper-plane" style="margin-right: 10px;"></i></span>Send
+                </button>
+            </form>
+            
+            </div>
+        </div>
+    </div>
+
+
+    <!-- The footer of the page -->
+    <footer>
+        <hr />
+        <div style="width: 100%; text-align: center; font-size: 1.2rem;" id="footer-find-me">
+            <span
+                data-sal-duration="600"
+                data-sal="slide-up"
+                data-sal-delay="200"
+                data-sal-easing="ease-out-bounce"
+            >Cari saya di sosial media</span>
+        </div>
+        <div class="icons" style="width: 100%; text-align: center; font-size: 2.2rem; margin-bottom: 5px; word-spacing: 1rem;"
+                data-sal-duration="600"
+                data-sal="slide-up"
+                data-sal-delay="250"
+                data-sal-easing="ease-out-bounce">
+
+                <a href="https://www.instagram.com/warsaftharith" target="_blank">
+                    <i class="fab fa-instagram" style="color: red;"></i>
+                </a>
+            
+                <a href="https://github.com/warsaftharith" target="_blank">
+                    <i class="fab fa-github" style="color: #333;"></i>
+                </a>
+            
+                <a href="https://web.facebook.com/WarsaftHarith" target="_blank">
+                    <i class="fab fa-facebook-square" style="color: #3C5A99;"></i>
+                </a>
+        </div>
+        <div class="container text-center"
+                data-sal-duration="800"
+                data-sal="slide-up"
+                data-sal-delay="250"
+                data-sal-easing="fade">
+            <span>Copyright &copy; 2024 <strong>WARSA</strong></span>
+        </div>
+    </footer>
+
+
+    <!-- The scripts are placed right here -->
+    <script src="/assets/javascript/sal.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://kit.fontawesome.com/eff5d0d257.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="./assets/javascript/main.js"></script>
+    <script src="./assets/javascript/scroll_jquery.js"></script>
+    <script src="./assets/javascript/tombol.js"></script>
+    <script src="./assets/javascript/loading.js"></script>
+
+    <!-- animation -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="/assets/javascript/index.js"></script>
+
+</body>
+</html>
